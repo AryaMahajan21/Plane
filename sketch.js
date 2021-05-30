@@ -71,7 +71,7 @@ camera.position.y  = Plane.y
 
 function createBirds() {
   if (frameCount % 80 === 0) {
-    Birds = createSprite(random(450,1000),random(0,200));
+    Birds = createSprite(random(Plane.x + 400,Plane.x + 600),random(0,200));
     Birds.addImage(Bird);
     Birds.scale = 0.2;
     Birds.lifetime = 200;
